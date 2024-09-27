@@ -160,6 +160,7 @@ body {
     .container-content {
         flex-direction: column;
         align-items: center;
+        margin-top: auto;
     }
 
     .container-logo {
