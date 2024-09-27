@@ -1,15 +1,17 @@
 body {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .navbar {
     width: 100%;
-    position: absolute;
+    position: fixed;
     background: #00a39d;
-    border-radius: 0;
-    z-index: 999;
-    border: 0;
     padding: 15px 0;
+    display: flex;
+    z-index: 1000; 
 }
 
 .container-logo {
@@ -21,6 +23,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-height: calc(100vh - 60px);
+    padding: 80px 20px 20px;
 }
 
 .login-box {
@@ -139,4 +143,100 @@ body {
     text-decoration: none;
     display: inline-block;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .container-logo {
+        padding-left: 200px;
+    }
+
+    .login-box, .info-box {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-logo {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .login-box, .info-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+
+    .info-box h2 {
+        font-size: 24px;
+    }
+
+    .info-box p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .login-box .captcha {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-box .captcha img {
+        margin-bottom: 10px;
+    }
+
+    .login-box .forgot-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-box .forgot-links a {
+        margin-bottom: 10px;
+    }
+
+    .info-box .tips-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .container-logo img {
+        width: 120px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .info-box h2 {
+        font-size: 20px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+    }
+
+    .login-box .login-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .info-box .tips-btn {
+        padding: 10px 20px;
+    }
 }
