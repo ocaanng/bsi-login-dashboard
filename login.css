@@ -1,0 +1,142 @@
+body {
+    font-family: Poppins;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    background: #00a39d;
+    border-radius: 0;
+    z-index: 999;
+    border: 0;
+    padding: 15px 0;
+}
+
+.container-logo {
+    padding: 0 0 0 350px;
+}
+
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    margin-right: 50px;
+}
+
+.login-box h2 {
+    color: #00a99d;
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+    outline: none;
+} 
+
+.login-box .captcha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-box .captcha img {
+    margin-right: 10px;
+}
+
+.login-box .captcha a {
+    color: #f7941d;
+    text-decoration: none;
+}
+
+.login-box .login-btn {
+    background-color: #00a99d;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-box .login-btn i {
+    margin-left: 10px;
+}
+
+.login-box .forgot-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-box .forgot-links a {
+    color: #f7941d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.info-box {
+    max-width: 500px;
+}
+
+.info-box h2 {
+    font-size: 40px;
+    line-height: 57px;
+    margin-bottom: 32px;
+    color: #00a39d;
+    font-weight: 700;
+    letter-spacing: .1px;
+}
+
+.info-box p {
+    font-size: 17px;
+    line-height: 57px;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: .1px;
+    text-align: justify;
+    color: #222;
+}
+
+.info-box p strong {
+    color: #000000;
+}
+
+.info-box .tips-btn {
+    background-color: #f7941d;
+    color: #ffffff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
